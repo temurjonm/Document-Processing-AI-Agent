@@ -2,6 +2,8 @@
 
 FastAPI-based document ingestion and retrieval app with hybrid search, agent mode, and an optional AWS-backed async pipeline.
 
+![Architecture](assets/doc-processing-agent.png)
+
 ## Features
 
 - PDF, DOCX, PNG, and JPEG upload support
