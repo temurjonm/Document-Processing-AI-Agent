@@ -1,0 +1,35 @@
+# Core
+fastapi==0.115.0
+uvicorn==0.30.0
+python-multipart==0.0.9
+pydantic==2.9.0
+
+# Document Processing
+PyMuPDF==1.24.0
+python-docx==1.1.0
+pytesseract==0.3.13
+Pillow==10.4.0
+
+# Chunking & Embeddings
+tiktoken==0.7.0
+openai==1.45.0
+httpx<0.28
+
+# Vector Store
+chromadb==0.5.0
+numpy<2
+
+# BM25 Keyword Search
+rank-bm25==0.2.2
+
+# Agent Orchestration
+langgraph==0.2.76
+langchain-core==0.3.23
+langchain-openai==0.2.0
+
+# AWS (pre-signed URLs)
+boto3==1.35.0
+
+# Utilities
+python-dotenv==1.0.1
+uuid6==2024.7.10

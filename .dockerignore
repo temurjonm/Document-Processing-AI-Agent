@@ -1,0 +1,13 @@
+.git
+.gitignore
+.terraform
+.env
+.env.*
+.claude
+.DS_Store
+data
+docs
+infra
+test
+*.excalidraw
+

@@ -1,0 +1,45 @@
+.DS_Store
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Runtime data
+data/uploads/**
+data/chroma/**
+!data/uploads/.gitkeep
+!data/chroma/.gitkeep
+
+# Terraform
+.terraform/
+**/.terraform/
+infra/terraform/.terraform.bak*/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.lock.hcl.bak.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+infra/terraform/terraform.tfvars
+infra/terraform/terraform-trace.log
+
+# Local tooling
+.claude
+.docs
+
+# Optional docs export
+docs/

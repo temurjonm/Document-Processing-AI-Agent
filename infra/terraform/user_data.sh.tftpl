@@ -1,0 +1,16 @@
+#!/bin/bash
+set -euxo pipefail
+
+dnf update -y
+dnf install -y docker rsync
+
+systemctl enable docker
+systemctl start docker
+usermod -aG docker ec2-user
+
+install -d -o ec2-user -g ec2-user ${deployment_root}
+install -d -o ec2-user -g ec2-user ${deployment_root}/app
+install -d -o ec2-user -g ec2-user ${deployment_root}/data
+install -d -o ec2-user -g ec2-user ${deployment_root}/data/uploads
+install -d -o ec2-user -g ec2-user ${deployment_root}/data/chroma
+touch ${deployment_root}/.bootstrap-complete
